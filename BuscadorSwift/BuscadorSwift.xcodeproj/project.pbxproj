@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		495D989D1C7508C6008BB6BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D989C1C7508C6008BB6BA /* AppDelegate.swift */; };
-		495D989F1C7508C6008BB6BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D989E1C7508C6008BB6BA /* ViewController.swift */; };
 		495D98A21C7508C6008BB6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495D98A01C7508C6008BB6BA /* Main.storyboard */; };
 		495D98A41C7508C6008BB6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495D98A31C7508C6008BB6BA /* Assets.xcassets */; };
 		495D98A71C7508C6008BB6BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495D98A51C7508C6008BB6BA /* LaunchScreen.storyboard */; };
 		495D98B21C7508C6008BB6BA /* BuscadorSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D98B11C7508C6008BB6BA /* BuscadorSwiftTests.swift */; };
 		495D98BD1C7508C6008BB6BA /* BuscadorSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D98BC1C7508C6008BB6BA /* BuscadorSwiftUITests.swift */; };
+		495D98CB1C751FCF008BB6BA /* buscadorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D98CA1C751FCF008BB6BA /* buscadorController.swift */; };
+		495D98CD1C7520C1008BB6BA /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D98CC1C7520C1008BB6BA /* SearchResultsViewController.swift */; };
+		495D98D51C7541B8008BB6BA /* SearchControllerBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D98D41C7541B8008BB6BA /* SearchControllerBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		495D98991C7508C6008BB6BA /* BuscadorSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuscadorSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495D989C1C7508C6008BB6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		495D989E1C7508C6008BB6BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		495D98A11C7508C6008BB6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		495D98A31C7508C6008BB6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495D98A61C7508C6008BB6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		495D98B81C7508C6008BB6BA /* BuscadorSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscadorSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		495D98BC1C7508C6008BB6BA /* BuscadorSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscadorSwiftUITests.swift; sourceTree = "<group>"; };
 		495D98BE1C7508C6008BB6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495D98CA1C751FCF008BB6BA /* buscadorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = buscadorController.swift; sourceTree = "<group>"; };
+		495D98CC1C7520C1008BB6BA /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		495D98D41C7541B8008BB6BA /* SearchControllerBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchControllerBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				495D989C1C7508C6008BB6BA /* AppDelegate.swift */,
-				495D989E1C7508C6008BB6BA /* ViewController.swift */,
 				495D98A01C7508C6008BB6BA /* Main.storyboard */,
 				495D98A31C7508C6008BB6BA /* Assets.xcassets */,
 				495D98A51C7508C6008BB6BA /* LaunchScreen.storyboard */,
 				495D98A81C7508C6008BB6BA /* Info.plist */,
+				495D98CA1C751FCF008BB6BA /* buscadorController.swift */,
+				495D98CC1C7520C1008BB6BA /* SearchResultsViewController.swift */,
+				495D98D41C7541B8008BB6BA /* SearchControllerBaseViewController.swift */,
 			);
 			path = BuscadorSwift;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				495D989F1C7508C6008BB6BA /* ViewController.swift in Sources */,
+				495D98CD1C7520C1008BB6BA /* SearchResultsViewController.swift in Sources */,
+				495D98CB1C751FCF008BB6BA /* buscadorController.swift in Sources */,
 				495D989D1C7508C6008BB6BA /* AppDelegate.swift in Sources */,
+				495D98D51C7541B8008BB6BA /* SearchControllerBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +492,7 @@
 				495D98C31C7508C6008BB6BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		495D98C41C7508C6008BB6BA /* Build configuration list for PBXNativeTarget "BuscadorSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				495D98C61C7508C6008BB6BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		495D98C71C7508C6008BB6BA /* Build configuration list for PBXNativeTarget "BuscadorSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				495D98C91C7508C6008BB6BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
